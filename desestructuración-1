@@ -1,0 +1,34 @@
+//  Desestructuración y objetos
+// --------------------------------------------
+
+// Objetivo:
+// Verificar la comprensión de objetos, acceso a propiedades y desestructuración.
+
+// Dado el siguiente objeto:
+const persona = {
+  nombre: "Lucía",
+  edad: 28,
+  profesion: "Diseñadora"
+};
+
+// --------------------------------------------
+// Punto 1:
+// Mostrar en consola un mensaje que diga:
+// "Lucía tiene 28 años y trabaja como Diseñadora."
+// Usando desestructuración
+
+// Desestructuración del objeto:
+const { nombre, edad, profesion } = persona;
+//desestructuración (equivale a acceder a cada propiedad sin escribir persona. cada vez).
+
+console.log(`${nombre} tiene ${edad} años y trabaja como ${profesion}.`);
+
+// --------------------------------------------
+// Punto 2:
+// Agregar una nueva propiedad al objeto llamada ciudad con el valor "Rosario"
+
+persona.ciudad = "Rosario";
+
+console.log(persona); // Verificamos que se agregó la propiedad
+
+//persona.ciudad = "Rosario"; → agregás propiedades dinámicamente a un objeto
